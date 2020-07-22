@@ -7,6 +7,8 @@ CFLAGS=-I$(IDIR)
 
 LIBS=
 
+TARGET=args_c
+
 #include here any header files which, when changed, will cause a recompile of the software.
 _DEPS = app_argument_parser.h
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
@@ -17,11 +19,11 @@ OBJ = $(patsubst %,$(ODIR)/%,$(_OBJ))
 $(ODIR)/%.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
-args_c: $(OBJ)
+$(TARGET): $(OBJ)
 	$(CC) -o $@ $^ $(CFLAGS) $(LIBS)
 
 #this is included incase a file called "clean" is included in the build!
 .PHONY: clean
 
 clean:
-	rm -f $(ODIR)/*.o *~ core $(INCDIR)/*~ 
+	rm -f $(ODIR)/*.o *~ core $(INCDIR)/*~ $(TARGET).exe
