@@ -10,7 +10,11 @@ char* GlobalOrderError;
 /*=======External Functions This Runner Calls=====*/
 extern void setUp(void);
 extern void tearDown(void);
-extern void test_app_argument_parser_NeedToImplement(void);
+extern void test_app_argument_parser_get_argument_seperators_0(void);
+extern void test_app_argument_parser_get_argument_seperators_1_0(void);
+extern void test_app_argument_parser_get_argument_seperators_1_1(void);
+extern void test_app_argument_parser_get_argument_seperators_2_0(void);
+extern void test_app_argument_parser_get_argument_seperators_2_1(void);
 
 
 /*=======Mock Management=====*/
@@ -75,7 +79,11 @@ static void run_test(UnityTestFunction func, const char* name, int line_num)
 int main(void)
 {
   UnityBegin("test_app_argument_parser.c");
-  run_test(test_app_argument_parser_NeedToImplement, "test_app_argument_parser_NeedToImplement", 13);
+  run_test(test_app_argument_parser_get_argument_seperators_0, "test_app_argument_parser_get_argument_seperators_0", 13);
+  run_test(test_app_argument_parser_get_argument_seperators_1_0, "test_app_argument_parser_get_argument_seperators_1_0", 19);
+  run_test(test_app_argument_parser_get_argument_seperators_1_1, "test_app_argument_parser_get_argument_seperators_1_1", 25);
+  run_test(test_app_argument_parser_get_argument_seperators_2_0, "test_app_argument_parser_get_argument_seperators_2_0", 31);
+  run_test(test_app_argument_parser_get_argument_seperators_2_1, "test_app_argument_parser_get_argument_seperators_2_1", 37);
 
   return UnityEnd();
 }
