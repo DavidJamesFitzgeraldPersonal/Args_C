@@ -10,11 +10,15 @@ char* GlobalOrderError;
 /*=======External Functions This Runner Calls=====*/
 extern void setUp(void);
 extern void tearDown(void);
-extern void test_app_argument_parser_get_argument_seperators_0(void);
-extern void test_app_argument_parser_get_argument_seperators_1_0(void);
-extern void test_app_argument_parser_get_argument_seperators_1_1(void);
-extern void test_app_argument_parser_get_argument_seperators_2_0(void);
-extern void test_app_argument_parser_get_argument_seperators_2_1(void);
+extern void test_app_argument_parser_get_number_of_char_in_string_0(void);
+extern void test_app_argument_parser_get_number_of_char_in_string_1_0(void);
+extern void test_app_argument_parser_get_number_of_char_in_string_1_1(void);
+extern void test_app_argument_parser_get_number_of_char_in_string_2_0(void);
+extern void test_app_argument_parser_get_number_of_char_in_string_2_1(void);
+extern void test_app_argument_parser_is_valid_flag_invalid_0(void);
+extern void test_app_argument_parser_is_valid_flag_invalid_1(void);
+extern void test_app_argument_parser_is_valid_flag_set_logging_valid(void);
+extern void test_app_argument_parser_is_valid_flag_set_logging_invalid(void);
 
 
 /*=======Mock Management=====*/
@@ -79,11 +83,15 @@ static void run_test(UnityTestFunction func, const char* name, int line_num)
 int main(void)
 {
   UnityBegin("test_app_argument_parser.c");
-  run_test(test_app_argument_parser_get_argument_seperators_0, "test_app_argument_parser_get_argument_seperators_0", 13);
-  run_test(test_app_argument_parser_get_argument_seperators_1_0, "test_app_argument_parser_get_argument_seperators_1_0", 19);
-  run_test(test_app_argument_parser_get_argument_seperators_1_1, "test_app_argument_parser_get_argument_seperators_1_1", 25);
-  run_test(test_app_argument_parser_get_argument_seperators_2_0, "test_app_argument_parser_get_argument_seperators_2_0", 31);
-  run_test(test_app_argument_parser_get_argument_seperators_2_1, "test_app_argument_parser_get_argument_seperators_2_1", 37);
+  run_test(test_app_argument_parser_get_number_of_char_in_string_0, "test_app_argument_parser_get_number_of_char_in_string_0", 14);
+  run_test(test_app_argument_parser_get_number_of_char_in_string_1_0, "test_app_argument_parser_get_number_of_char_in_string_1_0", 20);
+  run_test(test_app_argument_parser_get_number_of_char_in_string_1_1, "test_app_argument_parser_get_number_of_char_in_string_1_1", 26);
+  run_test(test_app_argument_parser_get_number_of_char_in_string_2_0, "test_app_argument_parser_get_number_of_char_in_string_2_0", 32);
+  run_test(test_app_argument_parser_get_number_of_char_in_string_2_1, "test_app_argument_parser_get_number_of_char_in_string_2_1", 38);
+  run_test(test_app_argument_parser_is_valid_flag_invalid_0, "test_app_argument_parser_is_valid_flag_invalid_0", 44);
+  run_test(test_app_argument_parser_is_valid_flag_invalid_1, "test_app_argument_parser_is_valid_flag_invalid_1", 50);
+  run_test(test_app_argument_parser_is_valid_flag_set_logging_valid, "test_app_argument_parser_is_valid_flag_set_logging_valid", 56);
+  run_test(test_app_argument_parser_is_valid_flag_set_logging_invalid, "test_app_argument_parser_is_valid_flag_set_logging_invalid", 63);
 
   return UnityEnd();
 }

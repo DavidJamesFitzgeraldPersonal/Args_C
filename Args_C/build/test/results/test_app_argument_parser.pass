@@ -1,0 +1,52 @@
+---
+:source:
+  :path: test
+  :file: test_app_argument_parser.c
+:successes:
+- :test: test_app_argument_parser_get_number_of_char_in_string_0
+  :line: 14
+  :message: ''
+  :unity_test_time: 0
+- :test: test_app_argument_parser_get_number_of_char_in_string_1_0
+  :line: 20
+  :message: ''
+  :unity_test_time: 0
+- :test: test_app_argument_parser_get_number_of_char_in_string_1_1
+  :line: 26
+  :message: ''
+  :unity_test_time: 0
+- :test: test_app_argument_parser_get_number_of_char_in_string_2_0
+  :line: 32
+  :message: ''
+  :unity_test_time: 0
+- :test: test_app_argument_parser_get_number_of_char_in_string_2_1
+  :line: 38
+  :message: ''
+  :unity_test_time: 0
+- :test: test_app_argument_parser_is_valid_flag_invalid_0
+  :line: 44
+  :message: ''
+  :unity_test_time: 0
+- :test: test_app_argument_parser_is_valid_flag_invalid_1
+  :line: 50
+  :message: ''
+  :unity_test_time: 0
+- :test: test_app_argument_parser_is_valid_flag_set_logging_valid
+  :line: 56
+  :message: ''
+  :unity_test_time: 0
+- :test: test_app_argument_parser_is_valid_flag_set_logging_invalid
+  :line: 63
+  :message: ''
+  :unity_test_time: 0
+:failures: []
+:ignores: []
+:counts:
+  :total: 9
+  :passed: 9
+  :failed: 0
+  :ignored: 0
+:stdout:
+- Flag type unknown.
+- Logging flag set.
+:time: 0.08974230000058014
