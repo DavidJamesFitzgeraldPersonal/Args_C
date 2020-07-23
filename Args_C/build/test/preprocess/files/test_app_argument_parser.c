@@ -1,5 +1,5 @@
 #include "build/temp/_test_app_argument_parser.c"
-#include "src/app_argument_parser.h"
+#include "include/app_argument_parser.h"
 #include "C:/Ruby27-x64/lib/ruby/gems/2.7.0/gems/ceedling-0.30.0/vendor/unity/src/unity.h"
 
 
@@ -59,7 +59,7 @@ void test_app_argument_parser_get_argument_seperators_1_1(void)
 
  char test[] = {'A','-','C','D'};
 
- UnityAssertEqualNumber((UNITY_INT)((2)), (UNITY_INT)((get_argument_seperators(test))), (
+ UnityAssertEqualNumber((UNITY_INT)((1)), (UNITY_INT)((get_argument_seperators(test))), (
 
 ((void *)0)
 

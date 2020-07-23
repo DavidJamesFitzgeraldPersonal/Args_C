@@ -1,3 +1,4 @@
+#include "app_argument_parser.h"
 #include <stdio.h>
 
 #define ARG_SEPERATOR '-'
