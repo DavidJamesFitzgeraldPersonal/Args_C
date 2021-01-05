@@ -1,3 +1,4 @@
+// Test comment
 #include <stdio.h>
 
 #include "app_argument_parser.h"
