@@ -6,6 +6,8 @@
 #define ARG_SEPERATOR 	'-'
 #define ARG_LOG			'L'
 
+//comment
+
 // Static Functions
 static bool parse_logging_flag(char* string);
 
